@@ -138,7 +138,12 @@ export default {
         }
     },
     created () {
+//        this.axios.get('http://www.goapp.com/admin/test').then((response) => {
+//
+//        console.log(response.data);
+//        })
         this.getData();
     }
+
 };
 </script>

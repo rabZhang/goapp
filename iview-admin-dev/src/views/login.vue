@@ -40,6 +40,7 @@
 <script>
 import Cookies from 'js-cookie';
 export default {
+    name:'home',
     data () {
         return {
             form: {
@@ -56,9 +57,11 @@ export default {
             }
         };
     },
+
     methods: {
         handleSubmit () {
             this.$refs.loginForm.validate((valid) => {
+                console.log(valid);
                 if (valid) {
                     Cookies.set('user', this.form.userName);
                     Cookies.set('password', this.form.password);

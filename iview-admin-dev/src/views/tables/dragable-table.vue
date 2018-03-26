@@ -9,7 +9,7 @@
             <Col span="16">
                 <Card>
                     <DragableTable 
-                        v-model="tableData" 
+                        v-model="tableData"
                         :columns-list="columnsList" 
                         @on-start="handleOnstart1" 
                         @on-end="handleOnend1" 
